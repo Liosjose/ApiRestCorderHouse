@@ -7,28 +7,20 @@
 </head>
 <body>
     
-    <h2>Ingrese Mascota</h2>
-    <form action="/productos/" method="POST">
-        Tittle: <input type="text" name="tittle">
-        Price: <input type="text" name="price">
-        thumbnail: <input type="text" name="thumbnail">
-        <button>Enviar</button>
+    <h2>Buscar todos los contactos</h2>
+    <form action="api/productos/" method="GET">
+             <button>GetAll</button>
     </form>
-
-    <form action="/productos/" method="GET">
-        <select>
-            <option action="/productos/" method="GET">obtener productos</option>
-            <option>obtener productos</option>
-            </select>
-                      <button>Enviar</button>
-    </form>    
-        
-    
-
-
     
     <br><hr>
 
-    
+    <h2>Ingrese Producto</h2>
+    <form action="/personas/guardar" method="POST">
+        Tittle: <input type="text" name="nombre">
+        Price: <input type="text" name="apellido">
+        Thumbnail: <input type="text" name="edad">
+        <button>Enviar</button>
+    </form>
+
 </body>
 </html>
